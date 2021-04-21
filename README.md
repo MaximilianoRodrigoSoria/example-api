@@ -45,3 +45,28 @@ Podemos anular el subir la imagen de docker al repositorio si anulamos goal push
   <!-- <goal>push</goal>  -Con esto no subira la imagen al repositorio-->
 </goals>
 ```
+
+## Imagen de docker en Docker Hub
+
+Podemos subir una imagen de docker a Docker hub
+
+https://hub.docker.com/
+
+Para esto debemos hacernos un usuario 
+
+y loguearnos por terminal antes de ejecutar el perfil docker en el proyecto.
+
+```
+docker login
+$username: tu_usuario
+$password: tu_usuario
+```
+Docker te dara tu propio depositorio para almacenar las imagenes de manera publica.
+
+para este ejemplo example-api se puede descargar con el comando:
+
+>  docker push arreguen/example-api:tagname
+
+Puedes ver los tag en la siguiente direccion: 
+
+https://hub.docker.com/repository/docker/arreguen/example-api
